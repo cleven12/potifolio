@@ -12,7 +12,7 @@ Personal portfolio of Cleven G — CS student and backend developer from Tanzani
 
 | Layer | Tech |
 |-------|------|
-| Framework | Next.js 14 (App Router) |
+| Framework | Next.js 16 |
 | Language | TypeScript |
 | Styling | Tailwind CSS |
 | Font | Geist |
@@ -34,4 +34,4 @@ Open [http://localhost:3000](http://localhost:3000)
 
 ---
 
-<sub>Built by <a href="https://github.com/cleven12">Cleven G</a> · Tanzania 🇹🇿</sub># potifolio
+<sub>Built by <a href="https://github.com/cleven12">Cleven G</a> · Tanzania 🇹🇿</sub>
