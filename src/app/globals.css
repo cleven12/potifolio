@@ -1,0 +1,126 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: var(--font-sans-loaded), 'Inter', sans-serif;
+  --font-serif: var(--font-serif-loaded), 'Cormorant Garamond', serif;
+
+  --color-background: hsl(20, 10%, 8%);
+  --color-foreground: hsl(40, 20%, 92%);
+  --color-primary: hsl(28, 60%, 55%);
+  --color-primary-foreground: hsl(20, 10%, 8%);
+  --color-secondary: hsl(20, 10%, 15%);
+  --color-secondary-foreground: hsl(40, 20%, 85%);
+  --color-muted: hsl(20, 10%, 18%);
+  --color-muted-foreground: hsl(40, 10%, 55%);
+  --color-border: hsl(20, 10%, 20%);
+  --color-accent: hsl(35, 70%, 65%);
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted-foreground);
+}
+
+/* Scroll-triggered animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animate-on-scroll.animate-left {
+  transform: translateX(-24px);
+}
+
+.animate-on-scroll.animate-right {
+  transform: translateX(24px);
+}
+
+.animate-on-scroll.animate-scale {
+  transform: scale(0.92);
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1);
+}
+
+/* Stagger delays */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+.delay-5 { transition-delay: 0.5s; }
+.delay-6 { transition-delay: 0.6s; }
