@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Cleven G</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<div class="africa-strip"></div>
+
+<nav class="navbar">
+  <span class="navbar-brand">Cleven G</span>
+  <a href="index.html"     class="nav-link">Home</a>
+  <a href="about.html"     class="nav-link">About</a>
+  <a href="projects.html"  class="nav-link active">Projects</a>
+  <a href="setup.html"     class="nav-link">Setup</a>
+  <a href="contact.html"   class="nav-link">Contact</a>
+  <a href="techtour.html"  class="nav-link tt-link">TechTour</a>
+</nav>
+
+<nav class="mobile-nav">
+  <a href="index.html"    class="mobile-nav-link"><i data-lucide="home"></i><span>Home</span></a>
+  <a href="about.html"    class="mobile-nav-link"><i data-lucide="user"></i><span>About</span></a>
+  <a href="projects.html" class="mobile-nav-link active"><i data-lucide="folder-open"></i><span>Projects</span></a>
+  <a href="setup.html"    class="mobile-nav-link"><i data-lucide="monitor"></i><span>Setup</span></a>
+  <a href="contact.html"  class="mobile-nav-link"><i data-lucide="mail"></i><span>Contact</span></a>
+  <a href="techtour.html" class="mobile-nav-link" style="color:hsl(15,60%,58%)"><i data-lucide="globe"></i><span>TechTour</span></a>
+</nav>
+
+<section style="padding:8rem 0 3rem;">
+  <div class="container" data-aos="fade-up">
+    <div class="section-label">Portfolio</div>
+    <h1 class="section-title">Projects</h1>
+    <div class="divider"></div>
+    <p class="section-sub">Real-world systems built with real constraints — from Tanzania's mountains to the global web.</p>
+  </div>
+</section>
+
+<!-- Projects Grid -->
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="projects-grid">
+
+      <!-- Xenohuru -->
+      <div class="card" data-aos="fade-up" data-aos-delay="0">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem;">
+          <span class="project-status"><span class="dot dot-green"></span> Open Source · Active</span>
+          <a href="https://github.com/xenohuru" target="_blank" style="color:var(--muted);"><i data-lucide="github" style="width:16px;height:16px;"></i></a>
+        </div>
+        <h3 style="font-size:1.15rem;margin-bottom:0.4rem;">Xenohuru</h3>
+        <p style="font-size:0.85rem;color:var(--muted);line-height:1.6;margin-bottom:0.75rem;">
+          Tanzania's open tourism data API — aggregating destinations, national parks, hotels, and experiences. Built on Django REST + PostgreSQL.
+        </p>
+        <div class="skill-tags">
+          <span class="skill-tag">Django</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">REST API</span>
+          <span class="skill-tag">Open Source</span>
+        </div>
+      </div>
+
+      <!-- Visit Kili Adventures -->
+      <div class="card" data-aos="fade-up" data-aos-delay="50">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem;">
+          <span class="project-status"><span class="dot dot-green"></span> Live</span>
+          <i data-lucide="external-link" style="width:16px;height:16px;color:var(--muted);"></i>
+        </div>
+        <h3 style="font-size:1.15rem;margin-bottom:0.4rem;">Visit Kili Adventures</h3>
+        <p style="font-size:0.85rem;color:var(--muted);line-height:1.6;margin-bottom:0.75rem;">
+          Booking platform for Kilimanjaro climbs and Tanzania safaris. Features DPO payment gateway, QR code ticket generation, and an admin dashboard.
+        </p>
+        <div class="skill-tags">
+          <span class="skill-tag">Django</span>
+          <span class="skill-tag">DPO Payments</span>
+          <span class="skill-tag">QR Codes</span>
+          <span class="skill-tag">MySQL</span>
+        </div>
+      </div>
+
+      <!-- WhatsApp AI -->
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem;">
+          <span class="project-status"><span class="dot dot-blue"></span> Open Source</span>
+          <a href="https://github.com/Cleven12" target="_blank" style="color:var(--muted);"><i data-lucide="github" style="width:16px;height:16px;"></i></a>
+        </div>
+        <h3 style="font-size:1.15rem;margin-bottom:0.4rem;">Personal WhatsApp AI</h3>
+        <p style="font-size:0.85rem;color:var(--muted);line-height:1.6;margin-bottom:0.75rem;">
+          Flask-based WhatsApp chatbot powered by Google Gemini. Handles Kiswahili slang, context memory, and automated replies.
+        </p>
+        <div class="skill-tags">
+          <span class="skill-tag">Flask</span>
+          <span class="skill-tag">Google Gemini</span>
+          <span class="skill-tag">WhatsApp API</span>
+          <span class="skill-tag">NLP</span>
+        </div>
+      </div>
+
+      <!-- SMS Gateway -->
+      <div class="card" data-aos="fade-up" data-aos-delay="0">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem;">
+          <span class="project-status"><span class="dot dot-orange"></span> Personal</span>
+        </div>
+        <h3 style="font-size:1.15rem;margin-bottom:0.4rem;">Local SMS Gateway (Termux)</h3>
+        <p style="font-size:0.85rem;color:var(--muted);line-height:1.6;margin-bottom:0.75rem;">
+          Self-hosted SMS gateway running on an Android phone via Termux. Routes SMS programmatically — no third-party SaaS dependency.
+        </p>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Termux</span>
+          <span class="skill-tag">Android</span>
+          <span class="skill-tag">SMS API</span>
+        </div>
+      </div>
+
+      <!-- MWECAU Election -->
+      <div class="card" data-aos="fade-up" data-aos-delay="50">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem;">
+          <span class="project-status"><span class="dot dot-green"></span> Deployed</span>
+        </div>
+        <h3 style="font-size:1.15rem;margin-bottom:0.4rem;">MWECAU Election Platform</h3>
+        <p style="font-size:0.85rem;color:var(--muted);line-height:1.6;margin-bottom:0.75rem;">
+          Secure digital student election system for Mwenge Catholic University. Full authentication, candidate registration, live results, and audit logs.
+        </p>
+        <div class="skill-tags">
+          <span class="skill-tag">Django</span>
+          <span class="skill-tag">Auth</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">University</span>
+        </div>
+      </div>
+
+      <!-- Digital Attendance -->
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem;">
+          <span class="project-status"><span class="dot dot-green"></span> Deployed</span>
+        </div>
+        <h3 style="font-size:1.15rem;margin-bottom:0.4rem;">Digital Attendance System</h3>
+        <p style="font-size:0.85rem;color:var(--muted);line-height:1.6;margin-bottom:0.75rem;">
+          QR code and session-code based attendance tracking for colleges. Reduces manual errors, auto-generates reports for lecturers.
+        </p>
+        <div class="skill-tags">
+          <span class="skill-tag">QR Code</span>
+          <span class="skill-tag">Django</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">Reports</span>
+        </div>
+      </div>
+
+      <!-- Confidential -->
+      <div class="card" data-aos="fade-up" data-aos-delay="0" style="border-style:dashed;">
+        <div style="margin-bottom:0.75rem;">
+          <span class="project-status"><span class="dot" style="background:var(--muted);"></span> NDA / Confidential</span>
+        </div>
+        <h3 style="font-size:1.15rem;margin-bottom:0.4rem;">Client Projects (NDA)</h3>
+        <p style="font-size:0.85rem;color:var(--muted);line-height:1.6;margin-bottom:0.75rem;">
+          Backend systems, REST APIs, AI integrations, and payment flows for undisclosed clients across e-commerce, logistics, and SaaS industries.
+        </p>
+        <div class="skill-tags">
+          <span class="skill-tag">REST API</span>
+          <span class="skill-tag">AI Agents</span>
+          <span class="skill-tag">Stripe</span>
+          <span class="skill-tag">Pesapal</span>
+        </div>
+      </div>
+
+      <!-- This portfolio -->
+      <div class="card" data-aos="fade-up" data-aos-delay="50">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem;">
+          <span class="project-status"><span class="dot dot-green"></span> Live · This Site</span>
+          <a href="https://github.com/Cleven12" target="_blank" style="color:var(--muted);"><i data-lucide="github" style="width:16px;height:16px;"></i></a>
+        </div>
+        <h3 style="font-size:1.15rem;margin-bottom:0.4rem;">clev_web Portfolio</h3>
+        <p style="font-size:0.85rem;color:var(--muted);line-height:1.6;margin-bottom:0.75rem;">
+          This very portfolio — built with plain HTML, CSS, Alpine.js, Tailwind, and Lucide icons via CDN. Zero build step, full ownership.
+        </p>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">Alpine.js</span>
+          <span class="skill-tag">Tailwind CDN</span>
+          <span class="skill-tag">Lucide</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="section" style="background:var(--surface);border-top:1px solid var(--border);">
+  <div class="container">
+    <div class="section-label" data-aos="fade-up">What I Offer</div>
+    <h2 class="section-title" data-aos="fade-up" data-aos-delay="50">Services</h2>
+    <div class="divider" data-aos="fade-up" data-aos-delay="100"></div>
+    <div class="skills-grid">
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <i data-lucide="server" style="width:20px;height:20px;color:var(--primary);margin-bottom:0.75rem;"></i>
+        <h3 style="font-size:1rem;margin-bottom:0.35rem;">Backend Architecture</h3>
+        <p style="font-size:0.83rem;color:var(--muted);line-height:1.6;">API design, database modelling, authentication, caching, and scalable service architecture.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="150">
+        <i data-lucide="bot" style="width:20px;height:20px;color:var(--gold);margin-bottom:0.75rem;"></i>
+        <h3 style="font-size:1rem;margin-bottom:0.35rem;">AI Integration</h3>
+        <p style="font-size:0.83rem;color:var(--muted);line-height:1.6;">LangChain agents, Gemini/GPT APIs, chatbots, email automation, and RAG pipelines.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <i data-lucide="credit-card" style="width:20px;height:20px;color:var(--accent);margin-bottom:0.75rem;"></i>
+        <h3 style="font-size:1rem;margin-bottom:0.35rem;">Payment Integration</h3>
+        <p style="font-size:0.83rem;color:var(--muted);line-height:1.6;">Stripe, PayPal, DPO, Pesapal — Africa-ready and global payment flow implementation.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <i data-lucide="refresh-cw" style="width:20px;height:20px;color:var(--primary);margin-bottom:0.75rem;"></i>
+        <h3 style="font-size:1rem;margin-bottom:0.35rem;">Software Re-Engineering</h3>
+        <p style="font-size:0.83rem;color:var(--muted);line-height:1.6;">Legacy system modernisation, API migration, and refactoring for performance and maintainability.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Cleven G</div>
+        <p class="footer-copy" style="margin-top:0.25rem;">Backend &amp; AI Engineer · Tanzania</p>
+      </div>
+      <div class="social-row">
+        <a href="https://github.com/Cleven12" target="_blank" class="social-link"><i data-lucide="github" style="width:14px;height:14px;"></i></a>
+        <a href="https://tz.linkedin.com/in/cleven-godson-0140b1355" target="_blank" class="social-link"><i data-lucide="linkedin" style="width:14px;height:14px;"></i></a>
+        <a href="https://x.com/cleven02" target="_blank" class="social-link"><i data-lucide="twitter" style="width:14px;height:14px;"></i></a>
+        <a href="https://wa.me/255692654000" target="_blank" class="social-link"><i data-lucide="message-circle" style="width:14px;height:14px;"></i></a>
+      </div>
+      <p class="footer-copy">© 2025 Cleven Godson. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
