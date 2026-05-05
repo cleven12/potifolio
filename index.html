@@ -55,16 +55,39 @@
   </a>
 </nav>
 
-<!-- Hero -->
-<section class="hero">
-  <!-- Spinning background elements -->
-  <div class="hero-bg" aria-hidden="true">
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="orb orb-3"></div>
-    <div class="geo-tri"></div>
-    <div class="geo-diamond"></div>
+<!-- Hero — Fullscreen Slideshow -->
+<section class="slideshow-hero" id="hero">
+
+  <!-- SLIDE 1 — Kilimanjaro Uhuru Peak: atmospheric, partial, snow falling -->
+  <div class="slide slide-kili active" id="slide-0">
+    <div class="kili-stars"></div>
+    <canvas class="snow-canvas" id="snowCanvas"></canvas>
+    <div class="kili-peak-img"></div>
+    <div class="mist mist-a"></div>
+    <div class="mist mist-b"></div>
+    <div class="mist mist-c"></div>
+    <div class="uhuru-label">
+      <span class="uhuru-alt">5,895 m</span>
+      <span class="uhuru-name">Uhuru Peak · Kilimanjaro</span>
+    </div>
   </div>
+
+  <!-- SLIDE 2 — Tanzania Landscape with Wildlife -->
+  <div class="slide slide-photo" id="slide-1"
+       style="background-image:url('assets/img/bg/tz-landscape.png');background-position:center 40%;"></div>
+
+  <!-- SLIDE 3 — On the Way to Kilimanjaro -->
+  <div class="slide slide-photo" id="slide-2"
+       style="background-image:url('assets/images/onway-to-kilimanjaro.png');background-position:center;"></div>
+
+  <!-- SLIDE 4 — Summit Success -->
+  <div class="slide slide-photo" id="slide-3"
+       style="background-image:url('assets/images/kilimanjaro_summits_success_with_kilita_tours_&_safari.jpg');background-position:center top;"></div>
+
+  <!-- Overlay -->
+  <div class="slide-overlay"></div>
+
+  <!-- Hero Content -->
   <div class="container">
     <div data-aos="fade-up">
       <div class="hero-eyebrow">
@@ -83,13 +106,6 @@
         for businesses worldwide. CS student at Mwenge Catholic University.
         Remote-first, results-driven.
       </p>
-      <!-- Event photo -->
-      <div style="margin-bottom:1.5rem;" data-aos="fade-up" data-aos-delay="80">
-        <img src="assets/images/cleven-at-hatua-to-gretest-talk.jpg"
-             alt="Cleven G speaking at Hatua to Greatest event"
-             style="width:100%;max-width:480px;height:220px;object-fit:cover;border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow);"
-             onerror="this.style.display='none'" />
-      </div>
 
       <div class="hero-actions">
         <a href="projects.html" class="btn btn-primary">
@@ -145,6 +161,20 @@
       </div>
     </div>
   </div>
+
+  <!-- Slide dots -->
+  <div class="slide-dots" id="slideDots">
+    <button class="slide-dot active" data-slide="0" aria-label="Kilimanjaro Peak"></button>
+    <button class="slide-dot" data-slide="1" aria-label="Tanzania Landscape"></button>
+    <button class="slide-dot" data-slide="2" aria-label="Kilimanjaro Trail"></button>
+    <button class="slide-dot" data-slide="3" aria-label="Summit Success"></button>
+  </div>
+
+  <!-- Scroll hint -->
+  <div class="scroll-hint" aria-hidden="true">
+    <i data-lucide="chevron-down" style="width:20px;height:20px;"></i>
+  </div>
+
 </section>
 
 <!-- What I Do (quick skills teaser) -->
