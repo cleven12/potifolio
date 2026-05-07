@@ -214,6 +214,7 @@ img { display: block; max-width: 100%; }
   justify-content: center;
   flex-wrap: wrap;
   max-width: calc(100% - 1rem);
+  display: flex;
 }
 
 .mobile-nav-link {
