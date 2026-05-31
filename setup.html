@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Setup — Cleven G</title>
+  <meta name="description" content="The machines, tools, and dev environment Cleven Godson uses to build backend systems and AI tools from Tanzania." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<div class="africa-strip"></div>
+
+<nav class="navbar">
+  <span class="navbar-brand">Cleven G</span>
+  <a href="index.html"    class="nav-link">Home</a>
+  <a href="about.html"    class="nav-link">About</a>
+  <a href="projects.html" class="nav-link">Projects</a>
+  <a href="setup.html"    class="nav-link active">Setup</a>
+  <a href="contact.html"  class="nav-link">Contact</a>
+  <a href="techtour.html" class="nav-link tt-link">TechTour</a>
+</nav>
+
+<nav class="mobile-nav">
+  <a href="index.html"    class="mobile-nav-link"><i data-lucide="home"></i><span>Home</span></a>
+  <a href="about.html"    class="mobile-nav-link"><i data-lucide="user"></i><span>About</span></a>
+  <a href="projects.html" class="mobile-nav-link"><i data-lucide="folder-open"></i><span>Projects</span></a>
+  <a href="setup.html"    class="mobile-nav-link active"><i data-lucide="monitor"></i><span>Setup</span></a>
+  <a href="contact.html"  class="mobile-nav-link"><i data-lucide="mail"></i><span>Contact</span></a>
+  <a href="techtour.html" class="mobile-nav-link" style="color:hsl(32,72%,48%)"><i data-lucide="globe"></i><span>TechTour</span></a>
+</nav>
+
+<section style="padding:8rem 0 3rem;">
+  <div class="container" data-aos="fade-up">
+    <div class="section-label">Behind the Code</div>
+    <h1 class="section-title">My Setup</h1>
+    <div class="divider"></div>
+    <p class="section-sub">The machines and tools that power everything I build — running on Linux, built for reliability.</p>
+  </div>
+</section>
+
+<!-- Machines -->
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1.5rem;" data-aos="fade-up">
+      <i data-lucide="laptop-2" style="width:20px;height:20px;color:var(--primary);"></i>
+      <h2 style="font-size:1.4rem;">My Machines</h2>
+    </div>
+
+    <div class="machine-grid">
+
+      <!-- Dell Latitude -->
+      <div class="card" data-aos="fade-up" data-aos-delay="50">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem;">
+          <div style="width:2.5rem;height:2.5rem;background:hsl(220,28%,12%);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;">
+            <i data-lucide="laptop" style="width:18px;height:18px;color:hsl(220,15%,70%);"></i>
+          </div>
+          <div>
+            <div style="font-weight:600;font-size:1rem;">Dell Latitude</div>
+            <span class="badge" style="font-size:0.65rem;padding:0.15rem 0.5rem;">Daily Driver</span>
+          </div>
+        </div>
+        <div>
+          <div class="spec-row">
+            <span class="spec-key">OS</span>
+            <span class="spec-val">Kali Linux (Rolling)</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">RAM</span>
+            <span class="spec-val">8 GB DDR3</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">Storage</span>
+            <span class="spec-val">HDD</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">Use</span>
+            <span class="spec-val">Dev, security research, daily work</span>
+          </div>
+        </div>
+        <div style="margin-top:1rem;">
+          <span class="badge" style="background:hsl(220,28%,14%);color:hsl(220,15%,72%);border-color:hsl(220,15%,28%);">
+            <i data-lucide="terminal" style="width:11px;height:11px;"></i> Kali Linux
+          </span>
+        </div>
+      </div>
+
+      <!-- Dell OptiPlex 5050 -->
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem;">
+          <div style="width:2.5rem;height:2.5rem;background:hsl(150,30%,14%);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;">
+            <i data-lucide="monitor" style="width:18px;height:18px;color:hsl(150,35%,60%);"></i>
+          </div>
+          <div>
+            <div style="font-weight:600;font-size:1rem;">Dell OptiPlex 5050 SFF</div>
+            <span class="badge badge-green" style="font-size:0.65rem;padding:0.15rem 0.5rem;">Home Server / Desktop</span>
+          </div>
+        </div>
+        <div>
+          <div class="spec-row">
+            <span class="spec-key">CPU</span>
+            <span class="spec-val">Intel Core i5-6500</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">OS</span>
+            <span class="spec-val">Linux Mint (Kali Mint)</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">Form Factor</span>
+            <span class="spec-val">Small Form Factor (SFF)</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">Use</span>
+            <span class="spec-val">Home server, heavy builds, long tasks</span>
+          </div>
+        </div>
+        <div style="margin-top:1rem;">
+          <span class="badge badge-green">
+            <i data-lucide="terminal" style="width:11px;height:11px;"></i> Linux Mint
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Future upgrade note -->
+    <div class="card" data-aos="fade-up" data-aos-delay="120"
+         style="margin-top:1.25rem;border-style:dashed;display:flex;align-items:center;gap:1rem;padding:1.1rem 1.4rem;">
+      <i data-lucide="zap" style="width:20px;height:20px;color:var(--gold);flex-shrink:0;"></i>
+      <p style="font-size:0.85rem;color:var(--muted);line-height:1.6;margin:0;">
+        <strong style="color:var(--text);">Upgrade incoming:</strong>
+        Sourcing multi-monitor setup from Kariakoo market — dual display for the OptiPlex for better workflow compartmentalisation.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Dev Environment -->
+<section class="section" style="border-top:1px solid var(--border);">
+  <div class="container">
+    <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1.5rem;" data-aos="fade-up">
+      <i data-lucide="wrench" style="width:20px;height:20px;color:var(--gold);"></i>
+      <h2 style="font-size:1.4rem;">Dev Environment</h2>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr;gap:1.25rem;">
+
+      <!-- IDEs -->
+      <div class="card" data-aos="fade-up" data-aos-delay="50">
+        <div style="font-size:0.75rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:0.75rem;">
+          IDEs &amp; Editors
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+          <div class="card" style="padding:0.65rem 0.9rem;display:inline-flex;align-items:center;gap:0.5rem;font-size:0.83rem;">
+            <i data-lucide="code" style="width:15px;height:15px;color:hsl(200,80%,44%);"></i> VS Code
+          </div>
+          <div class="card" style="padding:0.65rem 0.9rem;display:inline-flex;align-items:center;gap:0.5rem;font-size:0.83rem;">
+            <i data-lucide="cpu" style="width:15px;height:15px;color:hsl(260,60%,52%);"></i> PyCharm
+          </div>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <div style="font-size:0.75rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:0.75rem;">
+          Databases &amp; SQL Tools
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+          <div class="card" style="padding:0.65rem 0.9rem;display:inline-flex;align-items:center;gap:0.5rem;font-size:0.83rem;">
+            <i data-lucide="database" style="width:15px;height:15px;color:hsl(200,70%,42%);"></i> MySQL Workbench
+          </div>
+          <div class="card" style="padding:0.65rem 0.9rem;display:inline-flex;align-items:center;gap:0.5rem;font-size:0.83rem;">
+            <i data-lucide="database" style="width:15px;height:15px;color:var(--accent);"></i> DBeaver
+          </div>
+          <div class="card" style="padding:0.65rem 0.9rem;display:inline-flex;align-items:center;gap:0.5rem;font-size:0.83rem;">
+            <i data-lucide="terminal" style="width:15px;height:15px;color:var(--muted);"></i> psql CLI
+          </div>
+        </div>
+      </div>
+
+      <!-- API testing -->
+      <div class="card" data-aos="fade-up" data-aos-delay="150">
+        <div style="font-size:0.75rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:0.75rem;">
+          API Testing
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+          <div class="card" style="padding:0.65rem 0.9rem;display:inline-flex;align-items:center;gap:0.5rem;font-size:0.83rem;">
+            <i data-lucide="zap" style="width:15px;height:15px;color:var(--gold);"></i> Bruno
+          </div>
+          <div class="card" style="padding:0.65rem 0.9rem;display:inline-flex;align-items:center;gap:0.5rem;font-size:0.83rem;">
+            <i data-lucide="terminal" style="width:15px;height:15px;color:var(--muted);"></i> cURL
+          </div>
+          <div class="card" style="padding:0.65rem 0.9rem;display:inline-flex;align-items:center;gap:0.5rem;font-size:0.83rem;">
+            <i data-lucide="server" style="width:15px;height:15px;color:var(--primary);"></i> DRF Browsable API
+          </div>
+        </div>
+      </div>
+
+      <!-- Version control & platforms -->
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <div style="font-size:0.75rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:0.75rem;">
+          Version Control &amp; Platforms
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+          <div class="card" style="padding:0.65rem 0.9rem;display:inline-flex;align-items:center;gap:0.5rem;font-size:0.83rem;">
+            <i data-lucide="git-branch" style="width:15px;height:15px;color:var(--accent);"></i> Git
+          </div>
+          <div class="card" style="padding:0.65rem 0.9rem;display:inline-flex;align-items:center;gap:0.5rem;font-size:0.83rem;">
+            <i data-lucide="github" style="width:15px;height:15px;color:var(--text);"></i> GitHub
+          </div>
+          <div class="card" style="padding:0.65rem 0.9rem;display:inline-flex;align-items:center;gap:0.5rem;font-size:0.83rem;">
+            <i data-lucide="cloud" style="width:15px;height:15px;color:hsl(200,70%,44%);"></i> DigitalOcean
+          </div>
+          <div class="card" style="padding:0.65rem 0.9rem;display:inline-flex;align-items:center;gap:0.5rem;font-size:0.83rem;">
+            <i data-lucide="triangle" style="width:15px;height:15px;color:var(--text);"></i> Vercel
+          </div>
+        </div>
+      </div>
+
+      <!-- Security / Hacking tools -->
+      <div class="card" data-aos="fade-up" data-aos-delay="220">
+        <div style="font-size:0.75rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:0.75rem;">
+          Security &amp; Ethical Hacking
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+          <div class="card" style="padding:0.65rem 0.9rem;display:inline-flex;align-items:center;gap:0.5rem;font-size:0.83rem;">
+            <i data-lucide="shield" style="width:15px;height:15px;color:hsl(200,80%,40%);"></i> Kali Linux Tools
+          </div>
+          <div class="card" style="padding:0.65rem 0.9rem;display:inline-flex;align-items:center;gap:0.5rem;font-size:0.83rem;">
+            <i data-lucide="wifi" style="width:15px;height:15px;color:var(--accent);"></i> Wireshark
+          </div>
+          <div class="card" style="padding:0.65rem 0.9rem;display:inline-flex;align-items:center;gap:0.5rem;font-size:0.83rem;">
+            <i data-lucide="search" style="width:15px;height:15px;color:var(--muted);"></i> Burp Suite
+          </div>
+          <div class="card" style="padding:0.65rem 0.9rem;display:inline-flex;align-items:center;gap:0.5rem;font-size:0.83rem;">
+            <i data-lucide="terminal" style="width:15px;height:15px;color:hsl(150,50%,36%);"></i> Nmap
+          </div>
+        </div>
+      </div>
+
+      <!-- AI / ML tools -->
+      <div class="card" data-aos="fade-up" data-aos-delay="240">
+        <div style="font-size:0.75rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:0.75rem;">
+          AI / ML Stack
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+          <div class="card" style="padding:0.65rem 0.9rem;display:inline-flex;align-items:center;gap:0.5rem;font-size:0.83rem;">
+            <i data-lucide="bot" style="width:15px;height:15px;color:var(--primary);"></i> LangChain
+          </div>
+          <div class="card" style="padding:0.65rem 0.9rem;display:inline-flex;align-items:center;gap:0.5rem;font-size:0.83rem;">
+            <i data-lucide="zap" style="width:15px;height:15px;color:var(--gold);"></i> Groq
+          </div>
+          <div class="card" style="padding:0.65rem 0.9rem;display:inline-flex;align-items:center;gap:0.5rem;font-size:0.83rem;">
+            <i data-lucide="database" style="width:15px;height:15px;color:var(--accent);"></i> ChromaDB
+          </div>
+          <div class="card" style="padding:0.65rem 0.9rem;display:inline-flex;align-items:center;gap:0.5rem;font-size:0.83rem;">
+            <i data-lucide="cpu" style="width:15px;height:15px;color:hsl(260,60%,52%);"></i> scikit-learn
+          </div>
+          <div class="card" style="padding:0.65rem 0.9rem;display:inline-flex;align-items:center;gap:0.5rem;font-size:0.83rem;">
+            <i data-lucide="eye" style="width:15px;height:15px;color:var(--primary);"></i> OpenCV + YOLOv8
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Cleven G</div>
+        <p class="footer-copy" style="margin-top:0.25rem;">Backend &amp; AI Engineer · Tanzania</p>
+      </div>
+      <div class="social-row">
+        <a href="https://github.com/Cleven12" target="_blank" class="social-link"><i data-lucide="github" style="width:14px;height:14px;"></i></a>
+        <a href="https://tz.linkedin.com/in/cleven-godson-0140b1355" target="_blank" class="social-link"><i data-lucide="linkedin" style="width:14px;height:14px;"></i></a>
+        <a href="https://x.com/cleven02" target="_blank" class="social-link"><i data-lucide="twitter" style="width:14px;height:14px;"></i></a>
+        <a href="https://wa.me/255692654000?text=Hello%20Cleven,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" class="social-link"><i data-lucide="message-circle" style="width:14px;height:14px;"></i></a>
+      </div>
+      <p class="footer-copy">© 2026 Cleven Godson. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lucide@latest" defer></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cleven G — Digital Card</title>
+  <meta name="description" content="Cleven Godson — Backend & AI Engineer from Tanzania. Digital business card." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    body { padding-bottom: 0; }
+    .card-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+      background: var(--bg);
+      position: relative;
+      overflow: hidden;
+    }
+    /* very subtle bg orbs */
+    .card-page::before {
+      content: '';
+      position: fixed;
+      top: -120px; right: -80px;
+      width: 380px; height: 380px;
+      background: radial-gradient(circle, hsl(25,72%,50%) 0%, transparent 70%);
+      opacity: 0.06;
+      pointer-events: none;
+    }
+    .card-page::after {
+      content: '';
+      position: fixed;
+      bottom: -80px; left: -60px;
+      width: 280px; height: 280px;
+      background: radial-gradient(circle, hsl(44,80%,56%) 0%, transparent 70%);
+      opacity: 0.05;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="africa-strip"></div>
+
+<div class="card-page">
+  <div class="vcard">
+
+    <!-- Header -->
+    <div class="vcard-header">
+      <div class="vcard-avatar" style="background:none;padding:0;border:3px solid rgba(255,255,255,0.5);overflow:hidden;">
+        <img src="assets/images/cleven.png" alt="Cleven G" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.textContent='CG';this.parentElement.style.background='hsl(25,72%,60%)';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center';" />
+      </div>
+      <div class="vcard-name">Cleven G</div>
+      <div class="vcard-role">Backend &amp; AI Engineer · Tanzania</div>
+    </div>
+
+    <!-- Contact rows -->
+    <div class="vcard-body">
+
+      <a href="mailto:clevengodsontech@gmail.com" class="vcard-row">
+        <div class="vcard-row-icon">
+          <i data-lucide="mail" style="width:14px;height:14px;"></i>
+        </div>
+        <div>
+          <div style="font-size:0.7rem;color:var(--muted);margin-bottom:0.1rem;">Email</div>
+          clevengodsontech@gmail.com
+        </div>
+      </a>
+
+      <a href="https://wa.me/255692654000?text=Hello%20Cleven,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" class="vcard-row">
+        <div class="vcard-row-icon" style="background:hsl(140,50%,92%);color:hsl(140,55%,30%);">
+          <i data-lucide="message-circle" style="width:14px;height:14px;"></i>
+        </div>
+        <div>
+          <div style="font-size:0.7rem;color:var(--muted);margin-bottom:0.1rem;">WhatsApp</div>
+          +255 692 654 000
+        </div>
+      </a>
+
+      <a href="tel:+255692654000" class="vcard-row">
+        <div class="vcard-row-icon" style="background:hsl(210,60%,93%);color:hsl(210,65%,38%);">
+          <i data-lucide="phone" style="width:14px;height:14px;"></i>
+        </div>
+        <div>
+          <div style="font-size:0.7rem;color:var(--muted);margin-bottom:0.1rem;">Phone</div>
+          +255 692 654 000
+        </div>
+      </a>
+
+      <a href="https://tz.linkedin.com/in/cleven-godson-0140b1355" target="_blank" rel="noopener" class="vcard-row">
+        <div class="vcard-row-icon" style="background:hsl(210,80%,92%);color:hsl(210,80%,38%);">
+          <i data-lucide="linkedin" style="width:14px;height:14px;"></i>
+        </div>
+        <div>
+          <div style="font-size:0.7rem;color:var(--muted);margin-bottom:0.1rem;">LinkedIn</div>
+          cleven-godson
+        </div>
+      </a>
+
+      <a href="https://github.com/Cleven12" target="_blank" rel="noopener" class="vcard-row">
+        <div class="vcard-row-icon" style="background:hsl(25,10%,92%);color:hsl(25,10%,20%);">
+          <i data-lucide="github" style="width:14px;height:14px;"></i>
+        </div>
+        <div>
+          <div style="font-size:0.7rem;color:var(--muted);margin-bottom:0.1rem;">GitHub</div>
+          github.com/Cleven12
+        </div>
+      </a>
+
+      <a href="index.html" class="vcard-row">
+        <div class="vcard-row-icon" style="background:linear-gradient(135deg,hsl(25,72%,90%),hsl(44,80%,90%));color:var(--primary);">
+          <i data-lucide="globe" style="width:14px;height:14px;"></i>
+        </div>
+        <div>
+          <div style="font-size:0.7rem;color:var(--muted);margin-bottom:0.1rem;">Portfolio</div>
+          clevengodson.online
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Social row -->
+    <div class="vcard-social">
+      <a href="https://x.com/cleven02" target="_blank" rel="noopener" class="social-link" title="X / Twitter">
+        <i data-lucide="twitter" style="width:14px;height:14px;"></i>
+      </a>
+      <a href="https://dev.to/cleven_" target="_blank" rel="noopener" class="social-link" title="Dev.to">
+        <i data-lucide="code-2" style="width:14px;height:14px;"></i>
+      </a>
+      <a href="https://github.com/xenohuru" target="_blank" rel="noopener" class="social-link" title="Xenohuru GitHub">
+        <i data-lucide="github" style="width:14px;height:14px;"></i>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Save contact button -->
+  <a href="#" id="saveContact"
+     style="margin-top:1.5rem;display:inline-flex;align-items:center;gap:0.5rem;font-size:0.8rem;color:var(--muted);border:1px solid var(--border);padding:0.5rem 1.25rem;border-radius:999px;transition:all 0.25s;background:var(--surface);"
+     onmouseover="this.style.borderColor='var(--primary)';this.style.color='var(--primary)';"
+     onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)';"
+  >
+    <i data-lucide="download" style="width:13px;height:13px;"></i>
+    Save Contact (.vcf)
+  </a>
+</div>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    if (window.lucide) lucide.createIcons();
+
+    document.getElementById('saveContact').addEventListener('click', (e) => {
+      e.preventDefault();
+      const vcf = `BEGIN:VCARD\r\nVERSION:3.0\r\nFN:Cleven Godson\r\nN:Godson;Cleven;;;\r\nTITLE:Backend & AI Engineer\r\nTEL;TYPE=CELL:+255692654000\r\nEMAIL;TYPE=WORK:clevengodsontech@gmail.com\r\nURL:https://clevengodson.online\r\nX-SOCIALPROFILE;type=github:https://github.com/Cleven12\r\nX-SOCIALPROFILE;type=linkedin:https://tz.linkedin.com/in/cleven-godson-0140b1355\r\nORG:Freelance\r\nADR;TYPE=HOME:;;Tanzania;;;TZ\r\nEND:VCARD`;
+      const blob = new Blob([vcf], { type: 'text/vcard' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'cleven-godson.vcf';
+      a.click(); URL.revokeObjectURL(url);
+    });
+  });
+</script>
+</body>
+</html>
