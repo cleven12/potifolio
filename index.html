@@ -1,150 +1,287 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cleven G — Backend & AI Engineer</title>
-  <meta name="description" content="Cleven G is a freelance backend and AI engineer from Tanzania — building reliable web apps, REST APIs, booking systems, and AI-powered tools for businesses worldwide." />
+
+  <!-- ══ PRIMARY SEO ══ -->
+  <title>Cleven G — Backend & AI Engineer · Tanzania</title>
+  <meta name="description" content="Cleven Godson is a freelance backend and AI engineer from Kilimanjaro, Tanzania. Building REST APIs, AI-powered tools, and booking systems for tourism companies worldwide." />
+  <meta name="keywords" content="backend developer Tanzania, Django REST API, AI engineer Tanzania, Kilimanjaro tourism tech, freelance Python developer, Xenohuru, East Africa software engineer" />
+  <meta name="author" content="Cleven Godson" />
+  <link rel="canonical" href="https://clevengodson.online/" />
+
+  <!-- ══ OPEN GRAPH (Facebook / LinkedIn / WhatsApp) ══ -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://clevengodson.online/" />
+  <meta property="og:title"       content="Cleven G — Backend & AI Engineer · Tanzania" />
+  <meta property="og:description" content="Building reliable APIs, AI tools & booking systems for Africa's tourism sector. Founder of Xenohuru — open-source Tanzania tourism platform." />
+  <meta property="og:image"       content="https://res.cloudinary.com/diucc3vyb/image/upload/v1780225982/cleven_jcg1mp.png" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale"      content="en_TZ" />
+  <meta property="og:site_name"   content="Cleven Godson · Portfolio" />
+
+  <!-- ══ TWITTER CARD ══ -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:site"        content="@cleven02" />
+  <meta name="twitter:creator"     content="@cleven02" />
+  <meta name="twitter:title"       content="Cleven G — Backend & AI Engineer · Tanzania" />
+  <meta name="twitter:description" content="Building reliable APIs, AI tools & booking systems for Africa's tourism sector." />
+  <meta name="twitter:image"       content="https://res.cloudinary.com/diucc3vyb/image/upload/v1780225982/cleven_jcg1mp.png" />
+
+  <!-- ══ JSON-LD STRUCTURED DATA ══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Cleven Godson",
+    "url": "https://clevengodson.online",
+    "image": "https://res.cloudinary.com/diucc3vyb/image/upload/v1780225982/cleven_jcg1mp.png",
+    "sameAs": [
+      "https://github.com/Cleven12",
+      "https://tz.linkedin.com/in/cleven-godson-0140b1355",
+      "https://x.com/cleven02",
+      "https://dev.to/cleven_"
+    ],
+    "jobTitle": "Freelance Backend & AI Engineer",
+    "worksFor": { "@type": "Organization", "name": "Xenohuru" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Moshi", "addressCountry": "TZ" },
+    "description": "Freelance backend engineer and CS student specializing in Django REST APIs, AI tools, and tourism tech for East Africa."
+  }
+  </script>
+
+  <!-- ══ FONTS ══ -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
 
 <div class="africa-strip"></div>
 
-<nav class="navbar">
+<!-- ══ DESKTOP NAV ══ -->
+<nav class="navbar" role="navigation" aria-label="Main navigation">
   <span class="navbar-brand">Cleven G</span>
   <a href="index.html"    class="nav-link active">Home</a>
   <a href="about.html"    class="nav-link">About</a>
   <a href="projects.html" class="nav-link">Projects</a>
   <a href="setup.html"    class="nav-link">Setup</a>
   <a href="contact.html"  class="nav-link">Contact</a>
-  <a href="techtour.html" class="nav-link tt-link">TechTour</a>
+  <a href="https://techtravel.clevengodson.online" target="_blank" class="nav-link tt-link">TechTour ↗</a>
 </nav>
 
-<nav class="mobile-nav">
+<!-- ══ MOBILE BOTTOM NAV ══ -->
+<nav class="mobile-nav" role="navigation" aria-label="Mobile navigation">
   <a href="index.html"    class="mobile-nav-link active"><i data-lucide="home"></i><span>Home</span></a>
   <a href="about.html"    class="mobile-nav-link"><i data-lucide="user"></i><span>About</span></a>
   <a href="projects.html" class="mobile-nav-link"><i data-lucide="folder-open"></i><span>Projects</span></a>
   <a href="setup.html"    class="mobile-nav-link"><i data-lucide="monitor"></i><span>Setup</span></a>
   <a href="contact.html"  class="mobile-nav-link"><i data-lucide="mail"></i><span>Contact</span></a>
-  <a href="techtour.html" class="mobile-nav-link" style="color:hsl(32,72%,48%)"><i data-lucide="globe"></i><span>TechTour</span></a>
+  <a href="https://techtravel.clevengodson.online" target="_blank" class="mobile-nav-link" style="color:var(--teal)">
+    <i data-lucide="globe"></i><span>TechTour</span>
+  </a>
 </nav>
 
-<!-- ══ HERO ══ -->
-<section class="slideshow-hero" id="hero">
+<!-- ══ HERO SLIDESHOW ══ -->
+<section class="slideshow-hero" id="hero" aria-label="Hero section">
+
+  <!-- Slide 0: Kilimanjaro star field -->
   <div class="slide slide-kili active" id="slide-0">
     <div class="kili-stars"></div>
-    <canvas class="snow-canvas" id="snowCanvas"></canvas>
+    <canvas class="snow-canvas" id="snowCanvas" aria-hidden="true"></canvas>
     <div class="kili-peak-img"></div>
-    <div class="mist mist-a"></div><div class="mist mist-b"></div><div class="mist mist-c"></div>
-    <div class="uhuru-label">
+    <div class="slide-overlay"></div>
+    <div class="uhuru-label" aria-hidden="true">
       <span class="uhuru-alt">5,895 m</span>
       <span class="uhuru-name">Uhuru Peak · Kilimanjaro</span>
     </div>
   </div>
-  <div class="slide slide-photo" id="slide-1" style="background-image:url('assets/img/bg/tz-landscape.png');background-position:center 40%;"></div>
-  <div class="slide slide-photo" id="slide-2" style="background-image:url('assets/images/onway-to-kilimanjaro.png');background-position:center;"></div>
-  <div class="slide slide-photo" id="slide-3" style="background-image:url('assets/images/kilimanjaro_summits_success_with_kilita_tours_&_safari.jpg');background-position:center top;"></div>
+
+  <!-- Slide 1 -->
+  <div class="slide" id="slide-1" style="background-image:url('https://res.cloudinary.com/diucc3vyb/image/upload/v1780225981/onway-to-kilimanjaro_gzipss.png');background-position:center;"></div>
   <div class="slide-overlay"></div>
 
-  <div class="container">
+  <!-- Slide 2 -->
+  <div class="slide" id="slide-2" style="background-image:url('https://res.cloudinary.com/diucc3vyb/image/upload/v1780225985/kilimanjaro_summits_success_with_kilita_tours___safari_nl5ezz.png');background-position:center top;"></div>
+  <div class="slide-overlay"></div>
+
+  <!-- Slide 3 -->
+  <div class="slide" id="slide-3" style="background-image:url('https://res.cloudinary.com/diucc3vyb/image/upload/v1780225981/vitaly-gariev-wXZwBZMn4EA-unsplash_qxew1n.jpg');background-position:center;"></div>
+  <div class="slide-overlay"></div>
+
+  <!-- Hero content -->
+  <div class="container hero-content">
     <div data-aos="fade-up">
       <div class="hero-eyebrow">
-        <i data-lucide="map-pin" style="width:13px;height:13px;"></i>
-        Tanzania, East Africa · Remote-first
+        <i data-lucide="map-pin" style="width:12px;height:12px"></i>
+        Tanzania, East Africa &nbsp;·&nbsp; Remote-first
       </div>
-      <h1 class="hero-name"><span class="highlight">Cleven</span> G</h1>
+
+      <h1 class="hero-name">
+        <span class="gold">Cleven</span><br>
+        <span class="dim">G.</span>
+      </h1>
+
       <p class="hero-title">Freelance Backend &amp; AI Engineer</p>
+
       <p class="hero-bio">
-        Building reliable web apps, REST APIs, booking systems, and AI-powered tools
-        for businesses worldwide. CS student at Mwenge Catholic University.
-        Remote-first, results-driven.
+        Building reliable web apps, REST APIs, booking systems, and
+        AI-powered tools for businesses worldwide. CS student at Mwenge
+        Catholic University. Rooted in Kilimanjaro. Serving the world.
       </p>
+
       <div class="hero-actions">
         <a href="projects.html" class="btn btn-primary">
-          <i data-lucide="folder-open" style="width:15px;height:15px;"></i> View Projects
+          <i data-lucide="folder-open" style="width:14px;height:14px"></i>
+          View Projects
         </a>
         <a href="contact.html" class="btn btn-outline">
-          <i data-lucide="mail" style="width:15px;height:15px;"></i> Get in Touch
+          <i data-lucide="mail" style="width:14px;height:14px"></i>
+          Get in Touch
+        </a>
+        <a href="https://techtravel.clevengodson.online" target="_blank" class="btn btn-ghost">
+          <i data-lucide="globe" style="width:14px;height:14px"></i>
+          TechTour Blog
         </a>
       </div>
-      <div class="social-row" style="margin-bottom:2.5rem;">
-        <a href="mailto:clevengodsontech@gmail.com" class="social-link" title="Email"><i data-lucide="mail" style="width:15px;height:15px;"></i></a>
-        <a href="https://github.com/Cleven12" target="_blank" class="social-link" title="GitHub"><i data-lucide="github" style="width:15px;height:15px;"></i></a>
-        <a href="https://tz.linkedin.com/in/cleven-godson-0140b1355" target="_blank" class="social-link" title="LinkedIn"><i data-lucide="linkedin" style="width:15px;height:15px;"></i></a>
-        <a href="https://x.com/cleven02" target="_blank" class="social-link" title="X"><i data-lucide="twitter" style="width:15px;height:15px;"></i></a>
-        <a href="https://wa.me/255692654000" target="_blank" class="social-link" title="WhatsApp"><i data-lucide="message-circle" style="width:15px;height:15px;"></i></a>
-        <a href="https://dev.to/cleven_" target="_blank" class="social-link" title="Dev.to"><i data-lucide="code-2" style="width:15px;height:15px;"></i></a>
+
+      <div class="social-row" style="margin-bottom:2rem">
+        <a href="mailto:clevengodsontech@gmail.com" class="social-link" title="Email"><i data-lucide="mail" style="width:14px;height:14px"></i></a>
+        <a href="https://github.com/Cleven12" target="_blank" class="social-link" title="GitHub"><i data-lucide="github" style="width:14px;height:14px"></i></a>
+        <a href="https://tz.linkedin.com/in/cleven-godson-0140b1355" target="_blank" class="social-link" title="LinkedIn"><i data-lucide="linkedin" style="width:14px;height:14px"></i></a>
+        <a href="https://x.com/cleven02" target="_blank" class="social-link" title="X / Twitter"><i data-lucide="twitter" style="width:14px;height:14px"></i></a>
+        <a href="https://wa.me/255692654000?text=Hello%20Cleven,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" class="social-link" title="WhatsApp"><i data-lucide="message-circle" style="width:14px;height:14px"></i></a>
+        <a href="https://dev.to/cleven_" target="_blank" class="social-link" title="Dev.to"><i data-lucide="code-2" style="width:14px;height:14px"></i></a>
       </div>
-      <div class="stats-row" data-aos="fade-up" data-aos-delay="150">
+
+      <div class="stats-row" data-aos="fade-up" data-aos-delay="100">
         <div class="stat-item"><span class="stat-num">2+</span><span class="stat-label">Years Exp.</span></div>
         <div class="stat-item"><span class="stat-num">7+</span><span class="stat-label">Projects</span></div>
         <div class="stat-item"><span class="stat-num">12+</span><span class="stat-label">Technologies</span></div>
-        <div class="stat-item"><span class="stat-num">100%</span><span class="stat-label">Satisfaction</span></div>
+        <div class="stat-item"><span class="stat-num">100%</span><span class="stat-label">Remote-ready</span></div>
       </div>
     </div>
   </div>
 
-  <div class="slide-dots" id="slideDots">
+  <!-- Dots -->
+  <div class="slide-dots" id="slideDots" aria-label="Slideshow controls">
     <button class="slide-dot active" data-slide="0" aria-label="Kilimanjaro Peak"></button>
-    <button class="slide-dot" data-slide="1" aria-label="Tanzania Landscape"></button>
-    <button class="slide-dot" data-slide="2" aria-label="Kilimanjaro Trail"></button>
-    <button class="slide-dot" data-slide="3" aria-label="Summit Success"></button>
+    <button class="slide-dot" data-slide="1" aria-label="Mountain Trail"></button>
+    <button class="slide-dot" data-slide="2" aria-label="Summit Success"></button>
+    <button class="slide-dot" data-slide="3" aria-label="Landscape"></button>
   </div>
+
   <div class="scroll-hint" aria-hidden="true">
-    <i data-lucide="chevron-down" style="width:20px;height:20px;"></i>
+    <i data-lucide="chevron-down" style="width:20px;height:20px"></i>
   </div>
 </section>
 
 <!-- ══ WHAT I BUILD ══ -->
-<section class="section" style="padding-top:3rem;">
+<section class="section" id="expertise">
   <div class="container">
     <div class="section-label" data-aos="fade-up">Expertise</div>
     <h2 class="section-title" data-aos="fade-up" data-aos-delay="50">What I Build</h2>
     <div class="divider" data-aos="fade-up" data-aos-delay="100"></div>
+
     <div class="skills-grid">
       <div class="card" data-aos="fade-up" data-aos-delay="100">
-        <div style="color:var(--primary);margin-bottom:0.75rem;"><i data-lucide="server" style="width:22px;height:22px;"></i></div>
-        <h3 style="font-size:1.1rem;margin-bottom:0.4rem;">Backend Systems</h3>
-        <p style="font-size:0.85rem;color:var(--muted);line-height:1.6;">Django &amp; Flask APIs, REST architecture, PostgreSQL &amp; MySQL, auth flows, and scalable backend services.</p>
+        <div class="skill-icon teal"><i data-lucide="server" style="width:20px;height:20px"></i></div>
+        <div class="skill-title">Backend Systems</div>
+        <p class="skill-desc">Django &amp; Flask APIs, REST architecture, PostgreSQL &amp; MySQL, auth flows, and scalable backend services deployed on DigitalOcean.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Django</span>
+          <span class="skill-tag">Flask</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">REST API</span>
+          <span class="skill-tag">Nginx</span>
+        </div>
       </div>
+
       <div class="card" data-aos="fade-up" data-aos-delay="150">
-        <div style="color:var(--accent);margin-bottom:0.75rem;"><i data-lucide="bot" style="width:22px;height:22px;"></i></div>
-        <h3 style="font-size:1.1rem;margin-bottom:0.4rem;">AI Engineering</h3>
-        <p style="font-size:0.85rem;color:var(--muted);line-height:1.6;">AI agents, chatbots, email automation, LangChain pipelines, Claude &amp; Gemini integrations, and NLP tools.</p>
+        <div class="skill-icon gold"><i data-lucide="bot" style="width:20px;height:20px"></i></div>
+        <div class="skill-title">AI Engineering</div>
+        <p class="skill-desc">AI agents, chatbots, email automation, LangChain pipelines, Claude &amp; Gemini integrations, vector search with ChromaDB &amp; Qdrant.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">LangChain</span>
+          <span class="skill-tag">Claude API</span>
+          <span class="skill-tag">ChromaDB</span>
+          <span class="skill-tag">RAG</span>
+          <span class="skill-tag">Python</span>
+        </div>
       </div>
+
       <div class="card" data-aos="fade-up" data-aos-delay="200">
-        <div style="color:var(--gold);margin-bottom:0.75rem;"><i data-lucide="credit-card" style="width:22px;height:22px;"></i></div>
-        <h3 style="font-size:1.1rem;margin-bottom:0.4rem;">Payment Integration</h3>
-        <p style="font-size:0.85rem;color:var(--muted);line-height:1.6;">Stripe, PayPal, Pesapal, DPO — secure, Africa-ready payment flows for booking systems and e-commerce.</p>
+        <div class="skill-icon ember"><i data-lucide="credit-card" style="width:20px;height:20px"></i></div>
+        <div class="skill-title">Payment Integration</div>
+        <p class="skill-desc">Stripe, PayPal, Pesapal, DPO — secure Africa-ready payment flows for booking systems, safari platforms, and e-commerce.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Stripe</span>
+          <span class="skill-tag">Pesapal</span>
+          <span class="skill-tag">DPO</span>
+          <span class="skill-tag">Webhooks</span>
+        </div>
+      </div>
+
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <div class="skill-icon teal"><i data-lucide="search" style="width:20px;height:20px"></i></div>
+        <div class="skill-title">SEO & Content</div>
+        <p class="skill-desc">Technical SEO, JSON-LD structured data, sitemap generation, multilingual content strategy, and affiliate integration for tourism platforms.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">JSON-LD</span>
+          <span class="skill-tag">Core Web Vitals</span>
+          <span class="skill-tag">GetYourGuide</span>
+          <span class="skill-tag">Medium</span>
+        </div>
+      </div>
+
+      <div class="card" data-aos="fade-up" data-aos-delay="150">
+        <div class="skill-icon gold"><i data-lucide="shield" style="width:20px;height:20px"></i></div>
+        <div class="skill-title">Security & DevOps</div>
+        <p class="skill-desc">Ethical hacking background, CI/CD via GitHub Actions, Docker, SSL/TLS, cryptography implementation — security-first by default.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Kali Linux</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">GitHub Actions</span>
+          <span class="skill-tag">SSL/TLS</span>
+        </div>
+      </div>
+
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <div class="skill-icon ember"><i data-lucide="globe" style="width:20px;height:20px"></i></div>
+        <div class="skill-title">Tourism Tech</div>
+        <p class="skill-desc">Booking platforms, tour operator APIs, GetYourGuide &amp; Viator integrations, and open tourism data infrastructure for East Africa.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Xenohuru</span>
+          <span class="skill-tag">GYG API</span>
+          <span class="skill-tag">Booking Systems</span>
+          <span class="skill-tag">QR Tickets</span>
+        </div>
       </div>
     </div>
-    <div style="text-align:center;margin-top:2rem;" data-aos="fade-up">
+
+    <div style="text-align:center;margin-top:2.5rem" data-aos="fade-up">
       <a href="projects.html" class="btn btn-outline">See All Projects →</a>
     </div>
   </div>
 </section>
 
-<div class="section-connector"></div>
-
 <!-- ══ TECH × TOURISM ══ -->
-<section class="techtour-section">
+<section class="techtour-section" id="techtour">
   <div class="container">
     <div class="section-label" data-aos="fade-up">Teknolojia × Utalii</div>
     <h2 class="section-title" data-aos="fade-up" data-aos-delay="50">Where Tech Meets Safari</h2>
     <div class="divider" data-aos="fade-up" data-aos-delay="100"></div>
     <p class="section-sub" data-aos="fade-up" data-aos-delay="120">
       Tanzania's tourism is being transformed by technology — from AI chatbots to intelligent booking platforms.
-      I sit at that intersection. <em>Ninajenga daraja kati ya teknolojia na utalii.</em>
+      I sit at that intersection. <em style="color:var(--gold)">Ninajenga daraja kati ya teknolojia na utalii.</em>
     </p>
-    <div class="techtour-grid" data-aos="fade-up" data-aos-delay="150">
 
-      <div class="tt-hover-card" tabindex="0" role="button" aria-label="Tech makes travel real">
-        <img src="assets/images/tech-travel.jpg" alt="Tech and travel" loading="lazy" />
+    <div class="techtour-grid" data-aos="fade-up" data-aos-delay="150">
+      <div class="tt-hover-card" tabindex="0" role="article">
+        <img src="https://res.cloudinary.com/diucc3vyb/image/upload/v1780225978/tech-travel_rnhtis.jpg" alt="Tech and travel intersection" loading="lazy" />
         <div class="tt-card-title-bar">
           <span class="tt-swah">Teknolojia + Safari</span>
           <span class="tt-title">Tech Makes Travel Real</span>
@@ -153,12 +290,12 @@
           <span class="tt-swah">Teknolojia + Safari</span>
           <h4>When Code Meets Kilimanjaro</h4>
           <p>Travelers book Africa through digital interfaces. I build those — APIs that connect tour operators to GetYourGuide, Klook, and global booking platforms.</p>
-          <span class="tt-tag"><i data-lucide="external-link" style="width:10px;height:10px;"></i> GetYourGuide Partner</span>
+          <span class="tt-tag"><i data-lucide="external-link" style="width:10px;height:10px"></i> GetYourGuide Partner</span>
         </div>
       </div>
 
-      <div class="tt-hover-card" tabindex="0" role="button" aria-label="IT made travel genuine">
-        <img src="assets/images/it-made-travel-geinuine.jpg" alt="IT making travel genuine" loading="lazy" />
+      <div class="tt-hover-card" tabindex="0" role="article">
+        <img src="https://res.cloudinary.com/diucc3vyb/image/upload/v1780225977/it-made-travel-geinuine_qx8bzd.jpg" alt="IT making travel genuine" loading="lazy" />
         <div class="tt-card-title-bar">
           <span class="tt-swah">Uhalisi wa Kidijitali</span>
           <span class="tt-title">IT Made It Genuine</span>
@@ -166,13 +303,13 @@
         <div class="tt-card-info">
           <span class="tt-swah">Uhalisi wa Kidijitali</span>
           <h4>Digital Trust in Safari Booking</h4>
-          <p>Travelers spend thousands — they need trust first. I build booking systems with real reviews, live availability, and transparent pricing that convert visitors to clients.</p>
-          <span class="tt-tag"><i data-lucide="shield-check" style="width:10px;height:10px;"></i> Booking Systems</span>
+          <p>Travelers spend thousands — they need trust first. I build booking systems with real reviews, live availability, and transparent pricing.</p>
+          <span class="tt-tag"><i data-lucide="shield-check" style="width:10px;height:10px"></i> Booking Systems</span>
         </div>
       </div>
 
-      <div class="tt-hover-card" tabindex="0" role="button" aria-label="Agentic AI for tours">
-        <img src="assets/images/agentic-workflows.jpg" alt="Agentic AI workflows" loading="lazy" />
+      <div class="tt-hover-card" tabindex="0" role="article">
+        <img src="https://res.cloudinary.com/diucc3vyb/image/upload/v1780225984/agentic-workflows_e2pvdp.jpg" alt="Agentic AI workflows" loading="lazy" />
         <div class="tt-card-title-bar">
           <span class="tt-swah">Akili Bandia × Utalii</span>
           <span class="tt-title">Agentic AI for Tours</span>
@@ -180,13 +317,13 @@
         <div class="tt-card-info">
           <span class="tt-swah">Akili Bandia × Utalii</span>
           <h4>AI That Plans Your Safari</h4>
-          <p>Autonomous agents handling itinerary generation, 24/7 customer inquiries, and price optimization for tour operators. Built on LangChain, Claude, and Django backends.</p>
-          <span class="tt-tag"><i data-lucide="bot" style="width:10px;height:10px;"></i> LangChain + Claude</span>
+          <p>Autonomous agents handling itinerary generation, 24/7 customer inquiries, and price optimization for tour operators — built on LangChain and Claude.</p>
+          <span class="tt-tag"><i data-lucide="bot" style="width:10px;height:10px"></i> LangChain + Claude</span>
         </div>
       </div>
 
-      <div class="tt-hover-card" tabindex="0" role="button" aria-label="Cyber-powered workflows">
-        <img src="assets/images/cyber-agentic-workflow.jpeg" alt="Cyber agentic workflow" loading="lazy" />
+      <div class="tt-hover-card" tabindex="0" role="article">
+        <img src="https://res.cloudinary.com/diucc3vyb/image/upload/v1780225974/cyber-agentic-workflow_c157ah.jpg" alt="Cyber agentic workflow" loading="lazy" />
         <div class="tt-card-title-bar">
           <span class="tt-swah">Mifumo ya Kisasa</span>
           <span class="tt-title">Cyber-Powered Workflows</span>
@@ -194,13 +331,13 @@
         <div class="tt-card-info">
           <span class="tt-swah">Mifumo ya Kisasa</span>
           <h4>Secure, Automated Operations</h4>
-          <p>Tour companies handle sensitive data and payments. I implement secure backend workflows with auth, encryption, and ethical hacking perspectives built in from day one.</p>
-          <span class="tt-tag"><i data-lucide="lock" style="width:10px;height:10px;"></i> Security-first</span>
+          <p>Tour companies handle sensitive data and payments. I implement secure backend workflows with auth, encryption, and ethical hacking perspective built in.</p>
+          <span class="tt-tag"><i data-lucide="lock" style="width:10px;height:10px"></i> Security-first</span>
         </div>
       </div>
 
-      <div class="tt-hover-card" tabindex="0" role="button" aria-label="Safari AI chatbot">
-        <img src="assets/images/safari-chatbo.png" alt="Safari AI chatbot" loading="lazy" />
+      <div class="tt-hover-card" tabindex="0" role="article">
+        <img src="https://res.cloudinary.com/diucc3vyb/image/upload/v1780225976/safari-chatbo_yx0l6h.png" alt="Safari AI chatbot" loading="lazy" />
         <div class="tt-card-title-bar">
           <span class="tt-swah">Msaidizi wa AI</span>
           <span class="tt-title">Safari Chatbot</span>
@@ -208,28 +345,56 @@
         <div class="tt-card-info">
           <span class="tt-swah">Msaidizi wa AI</span>
           <h4>Xenohuru Safari AI</h4>
-          <p>Conversational AI for Tanzania tourism — answers about parks, permits, pricing, and itineraries in English and Swahili. Open-source, built on the Xenohuru platform.</p>
-          <span class="tt-tag"><i data-lucide="globe" style="width:10px;height:10px;"></i> xenohuru.com</span>
+          <p>Conversational AI for Tanzania tourism — answers about parks, permits, pricing, and itineraries in English and Swahili. Open-source, built on Xenohuru.</p>
+          <span class="tt-tag"><i data-lucide="globe" style="width:10px;height:10px"></i> xenohuru.com</span>
         </div>
       </div>
 
+      <div class="tt-hover-card" tabindex="0" role="article">
+        <img src="https://res.cloudinary.com/diucc3vyb/image/upload/v1780225981/structured_adventure_lehuwv.jpg" alt="Structured adventure" loading="lazy" />
+        <div class="tt-card-title-bar">
+          <span class="tt-swah">Safari ya Kidijitali</span>
+          <span class="tt-title">Structured Adventures</span>
+        </div>
+        <div class="tt-card-info">
+          <span class="tt-swah">Safari ya Kidijitali</span>
+          <h4>From Concept to Summit</h4>
+          <p>I've climbed the routes I build systems for — field knowledge meets backend precision. Every platform I build is tested in reality first.</p>
+          <span class="tt-tag"><i data-lucide="mountain" style="width:10px;height:10px"></i> On-the-ground dev</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TechTour link -->
+    <div class="tt-banner" data-aos="fade-up" style="margin-top:2rem">
+      <div class="tt-banner-text">
+        <strong>TechTour by Cleven G</strong>
+        <p>Full blog exploring where East African tech meets global travel culture.</p>
+      </div>
+      <a href="https://techtravel.clevengodson.online" target="_blank" rel="noopener" class="btn btn-outline">
+        <i data-lucide="external-link" style="width:14px;height:14px"></i>
+        Visit TechTour ↗
+      </a>
     </div>
   </div>
 </section>
 
-<div class="section-connector inv"></div>
-
 <!-- ══ CTA ══ -->
-<section class="section-sm" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
-  <div class="container" style="text-align:center;" data-aos="fade-up">
-    <p class="section-label">Open for Work</p>
+<section class="cta-section">
+  <div class="container" data-aos="fade-up">
+    <div class="section-label">Open for Work</div>
     <h2 class="section-title">Got a project? Let's talk.</h2>
-    <p class="section-sub" style="margin:0 auto 1.5rem;">
-      Whether you need a backend system, AI integration, or a full web platform — I'm ready to build it with you.
+    <p class="section-sub" style="margin:0.75rem auto 2rem">
+      Whether you need a backend system, AI integration, or a full platform for your tourism business — I'm ready to build it with you.
     </p>
-    <a href="contact.html" class="btn btn-primary">
-      <i data-lucide="send" style="width:15px;height:15px;"></i> Start a Conversation
-    </a>
+    <div style="display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap">
+      <a href="contact.html" class="btn btn-primary">
+        <i data-lucide="send" style="width:14px;height:14px"></i> Start a Conversation
+      </a>
+      <a href="https://www.fiverr.com/cleve_05" target="_blank" class="btn btn-ghost">
+        <i data-lucide="briefcase" style="width:14px;height:14px"></i> Hire on Fiverr
+      </a>
+    </div>
   </div>
 </section>
 
@@ -240,38 +405,124 @@
       <div data-aos="fade-right">
         <div class="profile-photo-wrap">
           <img
-            src="assets/images/cleven-at-hatua-to-gretest-talk.jpg"
+            src="https://res.cloudinary.com/diucc3vyb/image/upload/v1780225983/cleven-at-hatua-to-gretest-talk_uwawy8.jpg"
             alt="Cleven Godson at a tech event"
             class="profile-photo"
+            loading="lazy"
           />
-          <div class="profile-companion-badge" title="Life outside the terminal">
-            <img src="assets/images/vitaly-gariev-wXZwBZMn4EA-unsplash.jpg" alt="Together" />
+          <div class="profile-companion-badge">
+            <img
+              src="https://res.cloudinary.com/diucc3vyb/image/upload/v1780225981/vitaly-gariev-wXZwBZMn4EA-unsplash_qxew1n.jpg"
+              alt="Kilimanjaro view"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
+
       <div data-aos="fade-left" data-aos-delay="100">
         <div class="section-label">Kuhusu Mimi · About Me</div>
-        <h2 class="section-title" style="font-size:1.8rem;">
-          Engineer. Founder.<br/>
-          <span style="color:var(--primary);">Born from Kilimanjaro's shadow.</span>
+        <h2 class="section-title" style="font-size:clamp(1.6rem,4vw,2.2rem)">
+          Engineer. Founder.<br>
+          <span style="color:var(--gold);font-style:italic">Born from Kilimanjaro's shadow.</span>
         </h2>
         <div class="divider"></div>
-        <p style="font-size:0.95rem;color:var(--muted);line-height:1.8;margin-bottom:1.25rem;">
+        <p style="font-size:0.95rem;color:var(--muted);line-height:1.8;margin-bottom:1rem">
           Final-year CS student at Mwenge Catholic University (Moshi) and freelance backend engineer.
           I build web platforms, REST APIs, and AI tools — primarily for Tanzania's tourism sector.
         </p>
-        <p style="font-size:0.95rem;color:var(--muted);line-height:1.8;margin-bottom:1.5rem;">
-          Founder of <strong style="color:var(--text);">Xenohuru</strong> — an open-source Tanzania tourism API
-          (<em>"Free to Explore, Born from Africa"</em>). ICT Club leader. Field Practical supervisor
-          for three tourism companies in Kilimanjaro region.
+        <p style="font-size:0.95rem;color:var(--muted);line-height:1.8;margin-bottom:1.5rem">
+          Founder of <strong style="color:var(--text)">Xenohuru</strong> —
+          an open-source Tanzania tourism API (<em>"Free to Explore, Born from Africa"</em>).
+          ICT Club Project Manager at MWECAU. Field tech supervisor for tourism companies in Kilimanjaro region.
         </p>
-        <div style="display:flex;gap:0.65rem;flex-wrap:wrap;margin-bottom:1.5rem;">
-          <span class="badge"><i data-lucide="map-pin" style="width:11px;height:11px;"></i> Moshi, Tanzania</span>
-          <span class="badge badge-gold"><i data-lucide="graduation-cap" style="width:11px;height:11px;"></i> Final Year CS</span>
-          <span class="badge badge-green"><i data-lucide="code-2" style="width:11px;height:11px;"></i> Open Source</span>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1.5rem">
+          <span class="badge"><i data-lucide="map-pin" style="width:11px;height:11px"></i> Moshi, Tanzania</span>
+          <span class="badge badge-gold"><i data-lucide="graduation-cap" style="width:11px;height:11px"></i> Final Year CS</span>
+          <span class="badge badge-green"><i data-lucide="code-2" style="width:11px;height:11px"></i> Open Source</span>
+          <span class="badge badge-teal"><i data-lucide="shield" style="width:11px;height:11px"></i> Ethical Hacking</span>
         </div>
         <a href="about.html" class="btn btn-outline">Full Story →</a>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FEATURED PROJECTS ══ -->
+<section class="section">
+  <div class="container">
+    <div class="section-label" data-aos="fade-up">Selected Work</div>
+    <h2 class="section-title" data-aos="fade-up" data-aos-delay="50">Featured Projects</h2>
+    <div class="divider" data-aos="fade-up" data-aos-delay="100"></div>
+
+    <div class="projects-grid">
+      <!-- Xenohuru -->
+      <div class="card card-featured" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://res.cloudinary.com/diucc3vyb/image/upload/v1780225975/xenohuru-web_kpmqvm.png" alt="Xenohuru platform" class="project-img" loading="lazy" />
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.75rem">
+          <span class="project-status"><span class="dot dot-green"></span> Open Source · Active</span>
+          <a href="https://github.com/xenohuru" target="_blank" style="color:var(--muted)"><i data-lucide="github" style="width:15px;height:15px"></i></a>
+        </div>
+        <h3 style="font-size:1.15rem;margin-bottom:0.4rem">Xenohuru</h3>
+        <p style="font-size:0.85rem;color:var(--muted);line-height:1.6;margin-bottom:0.75rem">
+          Tanzania's open tourism data platform — GPS-accurate attractions, national parks, hotels, real-time weather. Django REST + PostgreSQL. <em>"Free to Explore, Born from Africa."</em>
+        </p>
+        <div class="skill-tags">
+          <span class="skill-tag">Django</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">REST API</span>
+          <span class="skill-tag">Open Source</span>
+        </div>
+        <div class="project-links">
+          <a href="https://xenohuru.com" target="_blank" class="project-link"><i data-lucide="external-link" style="width:11px;height:11px"></i> xenohuru.com</a>
+          <a href="https://github.com/xenohuru" target="_blank" class="project-link"><i data-lucide="github" style="width:11px;height:11px"></i> GitHub</a>
+        </div>
+      </div>
+
+      <!-- Visit Kili -->
+      <div class="card" data-aos="fade-up" data-aos-delay="150">
+        <img src="https://res.cloudinary.com/diucc3vyb/image/upload/v1780225976/visitkili_cp4cnq.png" alt="Visit Kili Adventures booking platform" class="project-img" loading="lazy" />
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.75rem">
+          <span class="project-status"><span class="dot dot-green"></span> Live</span>
+        </div>
+        <h3 style="font-size:1.15rem;margin-bottom:0.4rem">Visit Kili Adventures</h3>
+        <p style="font-size:0.85rem;color:var(--muted);line-height:1.6;margin-bottom:0.75rem">
+          Full-stack booking platform for Kilimanjaro climbs and safaris. DPO payment integration, QR code ticket generation, admin dashboard.
+        </p>
+        <div class="skill-tags">
+          <span class="skill-tag">Django</span>
+          <span class="skill-tag">DPO Pay</span>
+          <span class="skill-tag">QR Tickets</span>
+          <span class="skill-tag">MySQL</span>
+        </div>
+        <div class="project-links">
+          <a href="http://visitkili.com/" target="_blank" class="project-link"><i data-lucide="external-link" style="width:11px;height:11px"></i> visitkili.com</a>
+        </div>
+      </div>
+
+      <!-- MWECAU DigiVote -->
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://res.cloudinary.com/diucc3vyb/image/upload/v1780225977/mwecau-digivote_fq9act.png" alt="MWECAU DigiVote" class="project-img" loading="lazy" />
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.75rem">
+          <span class="project-status"><span class="dot dot-amber"></span> Institutional · Active</span>
+        </div>
+        <h3 style="font-size:1.15rem;margin-bottom:0.4rem">MWECAU DigiVote</h3>
+        <p style="font-size:0.85rem;color:var(--muted);line-height:1.6;margin-bottom:0.75rem">
+          Secure digital voting platform for university student elections. Role-based access, audit logs, real-time results dashboard.
+        </p>
+        <div class="skill-tags">
+          <span class="skill-tag">Django</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">DigitalOcean</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/mwecauictclub" target="_blank" class="project-link"><i data-lucide="github" style="width:11px;height:11px"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:2.5rem" data-aos="fade-up">
+      <a href="projects.html" class="btn btn-outline">View All Projects →</a>
     </div>
   </div>
 </section>
@@ -282,33 +533,44 @@
     <div class="section-label" data-aos="fade-up">Collaborations</div>
     <h2 class="section-title" data-aos="fade-up" data-aos-delay="50">Partners &amp; Clients</h2>
     <div class="divider" data-aos="fade-up" data-aos-delay="100"></div>
-    <p class="section-sub" data-aos="fade-up" data-aos-delay="120">
-      Tourism companies and tech organisations I've built products with in Tanzania.
-    </p>
+    <p class="section-sub" data-aos="fade-up" data-aos-delay="120">Tourism companies and tech organisations I've built products with in Tanzania.</p>
+
     <div class="partners-grid">
       <a href="https://ismanitours.com" target="_blank" rel="noopener" class="partner-card" data-aos="fade-up" data-aos-delay="100">
-        <div class="partner-logo-wrap"><img src="assets/images/ismani.png" alt="Ismani Tours & Safari" /></div>
+        <div class="partner-logo-wrap">
+          <img src="https://res.cloudinary.com/diucc3vyb/image/upload/v1780225976/ismani_njfbw9.png" alt="Ismani Tours & Safari" loading="lazy" />
+        </div>
         <span class="partner-name">Ismani Tours &amp; Safari</span>
         <span class="partner-domain">ismanitours.com</span>
       </a>
+
       <a href="http://visitkili.com/" target="_blank" rel="noopener" class="partner-card" data-aos="fade-up" data-aos-delay="130">
-        <div class="partner-logo-wrap"><img src="assets/images/visitkili.png" alt="Visit Kili Adventures" /></div>
+        <div class="partner-logo-wrap">
+          <img src="https://res.cloudinary.com/diucc3vyb/image/upload/v1780225983/kilita_tmj0xk.png" alt="Visit Kili Adventures" loading="lazy" />
+        </div>
         <span class="partner-name">Visit Kili Adventures</span>
         <span class="partner-domain">visitkili.com</span>
       </a>
+
       <a href="https://kilitasafaris.com/" target="_blank" rel="noopener" class="partner-card" data-aos="fade-up" data-aos-delay="160">
-        <div class="partner-logo-wrap"><img src="assets/images/kilita.png" alt="Kilita Tours & Safari" /></div>
+        <div class="partner-logo-wrap">
+          <img src="https://res.cloudinary.com/diucc3vyb/image/upload/v1780225983/kilita_tmj0xk.png" alt="Kilita Tours & Safari" loading="lazy" />
+        </div>
         <span class="partner-name">Kilita Tours &amp; Safari</span>
         <span class="partner-domain">kilitasafaris.com</span>
       </a>
+
       <a href="#" class="partner-card" data-aos="fade-up" data-aos-delay="190">
-        <div class="partner-logo-wrap"><img src="assets/images/kilinge.jpeg" alt="Kilinge Adventures" /></div>
+        <div class="partner-logo-wrap">
+          <img src="https://res.cloudinary.com/diucc3vyb/image/upload/v1780225979/kilinge_odsmam.jpg" alt="Kilinge Adventures" loading="lazy" />
+        </div>
         <span class="partner-name">Kilinge Adventures</span>
         <span class="partner-domain">Kilimanjaro Region</span>
       </a>
+
       <a href="https://xenohuru.com" target="_blank" rel="noopener" class="partner-card" data-aos="fade-up" data-aos-delay="220">
-        <div class="partner-logo-wrap" style="background:hsl(200,60%,8%);padding:2px;">
-          <img src="assets/images/xenohuru-web.png" alt="Xenohuru" style="object-fit:contain;border-radius:3px;" />
+        <div class="partner-logo-wrap" style="background:rgba(10,18,35,0.8)">
+          <img src="https://res.cloudinary.com/diucc3vyb/image/upload/v1780225975/xenohuru-web_kpmqvm.png" alt="Xenohuru" loading="lazy" style="object-fit:contain;border-radius:4px" />
         </div>
         <span class="partner-name">Xenohuru Platform</span>
         <span class="partner-domain">xenohuru.com</span>
@@ -322,48 +584,55 @@
   <div class="container">
     <div class="section-label" data-aos="fade-up">Support Independent Tech from Africa</div>
     <h2 class="section-title" data-aos="fade-up" data-aos-delay="50">
-      Sponsor a Developer<br/>Building Africa's Tourism Future
+      Sponsor a Developer<br>
+      <span style="color:var(--gold);font-style:italic">Building Africa's Tourism Future</span>
     </h2>
     <div class="divider" data-aos="fade-up" data-aos-delay="100"></div>
     <p class="section-sub" data-aos="fade-up" data-aos-delay="120">
-      I'm an independent developer from Tanzania — no VC, no corporate backing.
-      I build open-source tools, list tour products on global platforms, and create technology
-      that helps East African operators reach the world. Your support funds servers, tools,
-      and my ability to keep building.
+      I'm an independent developer from Tanzania — no VC, no corporate backing. I build open-source tools,
+      list tour products on global platforms, and create technology that helps East African operators reach
+      the world. Your support funds servers, tools, and my ability to keep building.
     </p>
 
     <div class="sponsor-value-grid" data-aos="fade-up" data-aos-delay="150">
       <div class="sponsor-value-card">
-        <div class="sv-icon"><i data-lucide="globe" style="width:20px;height:20px;"></i></div>
+        <div class="sv-icon"><i data-lucide="globe" style="width:18px;height:18px"></i></div>
         <h4>Open Source Tourism API</h4>
-        <p>Xenohuru is a free, open API for Tanzania tourism data. Built for developers worldwide who want to build Africa travel products without starting from scratch.</p>
+        <p>Xenohuru is a free, open API for Tanzania tourism data — built for developers worldwide who want to build Africa travel products without starting from scratch.</p>
       </div>
       <div class="sponsor-value-card">
-        <div class="sv-icon"><i data-lucide="map" style="width:20px;height:20px;"></i></div>
+        <div class="sv-icon"><i data-lucide="map" style="width:18px;height:18px"></i></div>
         <h4>Real Local Knowledge</h4>
         <p>I'm on the ground in Kilimanjaro region, working directly with operators — not a remote aggregator. Field experience informs every product I build.</p>
       </div>
       <div class="sponsor-value-card">
-        <div class="sv-icon"><i data-lucide="code-2" style="width:20px;height:20px;"></i></div>
+        <div class="sv-icon"><i data-lucide="code-2" style="width:18px;height:18px"></i></div>
         <h4>Direct Impact, Zero Overhead</h4>
-        <p>Every dollar goes to infrastructure and development. No middlemen. Code is on GitHub, work is transparent.</p>
+        <p>Every dollar goes to infrastructure and development. No middlemen. Code is on GitHub, work is transparent and open.</p>
       </div>
     </div>
 
     <div class="sponsor-cta-row" data-aos="fade-up" data-aos-delay="200">
-      <a href="https://github.com/sponsors/Cleven12" target="_blank" class="btn btn-sponsor">
-        <i data-lucide="heart" style="width:15px;height:15px;"></i> Sponsor on GitHub
+      <a href="https://github.com/sponsors/Cleven12" target="_blank" class="btn-sponsor">
+        <i data-lucide="heart" style="width:14px;height:14px"></i> Sponsor on GitHub
       </a>
-      <a href="https://buymeacoffee.com/cleven" target="_blank" class="btn btn-sponsor-outline">☕ Buy me a coffee</a>
-      <a href="contact.html" class="btn btn-sponsor-outline">
-        <i data-lucide="handshake" style="width:15px;height:15px;"></i> Partnership inquiry
+      <a href="https://buymeacoffee.com/cleven" target="_blank" class="btn-sponsor-outline">☕ Buy me a coffee</a>
+      <a href="contact.html" class="btn-sponsor-outline">
+        <i data-lucide="handshake" style="width:14px;height:14px"></i> Partnership inquiry
       </a>
     </div>
 
-    <p style="margin-top:2rem;font-size:0.8rem;color:rgba(255,255,255,0.38);max-width:58ch;line-height:1.7;">
-      Tour operators I've built for earn thousands of USD per client.
-      I earn 2,000 TZS per product listing. Sponsorship lets me stay independent
-      and keep building tools that benefit the whole ecosystem — not just one company.
+    <!-- Snippe payment note -->
+    <div class="snippe-note" data-aos="fade-up" data-aos-delay="250">
+      <i data-lucide="info" style="width:16px;height:16px;flex-shrink:0;color:var(--teal)"></i>
+      Tanzania-based? You can support directly via my registered Snippe account —
+      <a href="https://snippe.sh" target="_blank" rel="noopener">&nbsp;snippe.sh</a>.
+      &nbsp;TIN-registered. Secure. Local.
+    </div>
+
+    <p style="margin-top:1.5rem;font-size:0.78rem;color:var(--subtle);max-width:58ch;line-height:1.7">
+      Tour operators I've built for earn thousands of USD per client. I earn 2,000 TZS per product listing.
+      Sponsorship lets me stay independent and keep building tools that benefit the whole ecosystem — not just one company.
     </p>
   </div>
 </section>
@@ -374,21 +643,21 @@
     <div class="footer-inner">
       <div>
         <div class="footer-brand">Cleven G</div>
-        <p class="footer-copy" style="margin-top:0.25rem;">Backend &amp; AI Engineer · Tanzania</p>
+        <p class="footer-copy" style="margin-top:0.2rem">Backend &amp; AI Engineer · Tanzania</p>
       </div>
       <div class="social-row">
-        <a href="https://github.com/Cleven12" target="_blank" class="social-link" title="GitHub"><i data-lucide="github" style="width:14px;height:14px;"></i></a>
-        <a href="https://tz.linkedin.com/in/cleven-godson-0140b1355" target="_blank" class="social-link" title="LinkedIn"><i data-lucide="linkedin" style="width:14px;height:14px;"></i></a>
-        <a href="https://x.com/cleven02" target="_blank" class="social-link" title="X"><i data-lucide="twitter" style="width:14px;height:14px;"></i></a>
-        <a href="https://wa.me/255692654000" target="_blank" class="social-link" title="WhatsApp"><i data-lucide="message-circle" style="width:14px;height:14px;"></i></a>
+        <a href="https://github.com/Cleven12" target="_blank" class="social-link" title="GitHub"><i data-lucide="github" style="width:14px;height:14px"></i></a>
+        <a href="https://tz.linkedin.com/in/cleven-godson-0140b1355" target="_blank" class="social-link" title="LinkedIn"><i data-lucide="linkedin" style="width:14px;height:14px"></i></a>
+        <a href="https://x.com/cleven02" target="_blank" class="social-link" title="X"><i data-lucide="twitter" style="width:14px;height:14px"></i></a>
+        <a href="https://wa.me/255692654000?text=Hello%20Cleven,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" class="social-link" title="WhatsApp"><i data-lucide="message-circle" style="width:14px;height:14px"></i></a>
       </div>
       <p class="footer-copy">© 2026 Cleven Godson. All rights reserved.</p>
     </div>
   </div>
 </footer>
 
+<!-- Scripts — no jQuery, no heavy libs -->
 <script src="https://unpkg.com/lucide@latest"></script>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
